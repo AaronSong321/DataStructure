@@ -1,4 +1,5 @@
-﻿using Aaron.DataStructure.RBTree;
+﻿using Aaron.DataStructure.FibonacciHeap;
+using Aaron.DataStructure.RBTree;
 using Aaron.DataStructure.Treap;
 using Aaron.DataStructure.VEBTree;
 using System;
@@ -21,7 +22,9 @@ namespace Aaron.DataStructure
             //VEBTest.TestDouble();
             //VEBTest.TestValidation();
 
-            TreapTest.TestValidation();
+            //TreapTest.TestValidation();
+
+            FibHeapTest.TestValidation();
 
             Console.ReadLine();
         }

@@ -48,6 +48,11 @@
     <Compile Include="Basic\IBinaryTree.cs" />
     <Compile Include="Basic\IHeap.cs" />
     <Compile Include="Basic\IPriorityQueue.cs" />
+    <Compile Include="BTree\BNode.cs" />
+    <Compile Include="BTree\BTree.cs" />
+    <Compile Include="FibonacciHeap\FibHeapTest.cs" />
+    <Compile Include="FibonacciHeap\FibonacciHeap.cs" />
+    <Compile Include="FibonacciHeap\FibonacciNode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RedBlackTree\RedBlackNode.cs" />

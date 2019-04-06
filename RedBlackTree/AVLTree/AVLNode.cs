@@ -47,7 +47,7 @@ namespace Aaron.DataStructure.AVLTree
 
         public override bool Equals(object obj)
         {
-            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            if (obj == null) return false;
             if (obj is AVLNode<K, V> avl)
                 return CompareTo(avl) == 0;
             else return false;

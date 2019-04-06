@@ -33,7 +33,7 @@ namespace Aaron.DataStructure.Treap
 
         public override bool Equals(object obj)
         {
-            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            if (obj == null) return false;
             if (obj is TreapNode<TK, TP> a)
                 return CompareTo(a) == 0;
             else return false;
@@ -41,16 +41,6 @@ namespace Aaron.DataStructure.Treap
         public override int GetHashCode()
         {
             return base.GetHashCode();
-        }
-
-        public void ExchangeData(TreapNode<TK,TP> node)
-        {
-            var a = Index;
-            Index = node.Index;
-            node.Index = a;
-            var b = Priority;
-            Priority = node.Priority;
-            node.Priority = b;
         }
     }
 }

@@ -49,7 +49,7 @@ namespace Aaron.DataStructure.RBTree
 
         public override bool Equals(object obj)
         {
-            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            if (obj == null) return false;
             if (obj is RedBlackNode<Key, Value> a)
                 return CompareTo(a) == 0;
             else return false;
